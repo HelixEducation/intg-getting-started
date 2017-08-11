@@ -1,4 +1,4 @@
-# Sample project for getting up and running quicker with Application Integration
+Sample project for getting up and running quicker with Application Integration
 
 # Setup
 This library leverages the default AWS credentials that are set within the .Net configuration.
