@@ -32,7 +32,7 @@ namespace AwsSqsSample2
                 Console.WriteLine("===========================================\n");
 
                 // Our test Queue ... should read from Config because this will be different endpoint in Production
-                string appQueueUrl = "https://sqs.us-west-2.amazonaws.com/320984030376/mmu-applications-dev";
+                string appQueueUrl = "https://sqs.us-west-2.amazonaws.com/123456789012/applications";
 
                 //Confirming the queue exists and list all queues
                 // TODO Can delete this
