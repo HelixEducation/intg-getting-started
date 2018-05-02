@@ -32,3 +32,9 @@ This script completely wipes the queue clean
 ```
 ./purge-queue.py
 ```
+
+### Tailing a queue
+Polls the queue continuously and logs any messages it sees to stdout
+```
+./tail-queue.py
+```
