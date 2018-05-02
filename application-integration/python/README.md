@@ -18,7 +18,7 @@ sqs_url: {fully qualified URL of the SQS queue, e.g. https://sqs.us-west-2.amazo
 
 ## Usage
 The following commands are run from the terminal after you change path to the appropriate directory.
-For Windows users, substitute a '\' for the '/' on *nix.
+For Windows users, substitute a '\\' for the '/' on *nix.
 ### Submitting a sample to the queue
 For publishing a sample message to the SQS queue, this script reads the payload
 from the specified file. The specified file can live anywhere, and should contain a JSON string as it's
