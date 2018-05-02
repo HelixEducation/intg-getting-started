@@ -7,17 +7,17 @@
 
 ## Amazon SQS Configuration
 $msgCount = 10
-$poll = $true
+$poll = $false
 $region = 'us-west-2'
-$profile = '<profile>'
-$queueUrl = 'https://sqs.us-west-2.amazonaws.com/320984030376/mmu-applications-dev'
+$profile = 'default'
+$queueUrl = 'https://sqs.us-west-2.amazonaws.com/320984030376/usf-applications'
 
 ## Message Delivery Configuration
-$doEmail = $true
+$doEmail = $false
 $doFile = $true
 
 ## Output File Configuration
-$fileDir = 'C:\' # must include the ending \
+$fileDir = 'C:\Users\Chris Hatton\' # must include the ending \
 $fileName = 'application.csv'
 
 ## SMTP Configuration
@@ -35,13 +35,17 @@ Do {
 
  # process each application message individually
  foreach ($msg In $appMsgs) {
+    #$msg
     # grab the receipt handle for use in delete call after processing
     $receiptHandle = $msg.ReceiptHandle
 
     # the application JSON is contained in AWSMessage.Body.Message
     $body = $msg.Body
     $jsonBody = ConvertFrom-JSON -InputObject $body
-    $jsonMsg = ConvertFrom-JSON -InputObject $jsonBody.Message
+    #$jsonMsg = ConvertFrom-JSON -InputObject $jsonBody.Message
+
+    #$jsonBody
+    #$jsonBody.timestamp
 
     # send the application messge to an Admissions recipient via email
     if($doEmail) {
@@ -60,12 +64,12 @@ Do {
       $header = "helixStudentId,firstname"
       Out-File -FilePath "$fileDir$fileName" -InputObject $header
       # write the application record
-      $record = $jsonMsg.helixStudentId + "," + $jsonMsg.personalInfo.firstname
+      $record = $jsonBody.event.entity.enrollmentId + "," + $jsonBody.event.entity.personalInformation.firstname
       Out-File -FilePath "$fileDir$fileName" -Append -InputObject $record
     }
 
     # after processing delete the message off the queue
-    $del = Remove-SQSMessage -QueueUrl $queueUrl -Region $region -ProfileName $profile -ReceiptHandle $receiptHandle -Force
+  #  $del = Remove-SQSMessage -QueueUrl $queueUrl -Region $region -ProfileName $profile -ReceiptHandle $receiptHandle -Force
  }
 }
 While ($poll)
