@@ -5,7 +5,7 @@ import boto3
 import sys
 
 if len(sys.argv) < 2:
-	print 'usage: publish-application.py {filename}}'
+	print 'usage: publish-application.py {filename}'
 	sys.exit(1)
 
 # Load config file
@@ -23,17 +23,24 @@ sqs_url = config['sqs_url']
 
 print ('Sending to [%s] from filename: %s' %(sqs_url, filename))
 
+# Read the app.json payload from the specified file
 with open(filename, 'r') as applicationfile:
-    data=applicationfile.read().replace('\n', '')
+    application_json=applicationfile.read().replace('\n', '')
 
-session = boto3.Session(profile_name='default')
-client = session.client('sqs').send_message(
+# Create SQS client
+client = boto3.client(
+    'sqs',
+    aws_access_key_id=config['aws_access_key_id'],
+    aws_secret_access_key=config['aws_secret_access_key'])
+
+# Publish
+client.send_message(
     QueueUrl=sqs_url,
-    MessageBody=data,
+    MessageBody=application_json,
     MessageAttributes={
         'string': {
             'StringValue': 'string',
             'DataType': 'String'
+            }
         }
-    }
-)
+    )
