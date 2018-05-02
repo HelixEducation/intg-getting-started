@@ -8,7 +8,7 @@ pip install yml
 pip install boto3
 ```
 ## Configuration
-This script requires a file in the same directory titled config.yml that includes the following info:
+This script requires a file in the same directory titled `config.yml` that includes the following info:
 ```
 aws_region: us-west-2
 aws_access_key_id: {access key with permission to publish to SQS queue}
