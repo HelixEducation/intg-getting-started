@@ -1,0 +1,119 @@
+{
+  "eventSchema": "events/applicationSubmission/created",
+  "event": {
+    "verb": "created",
+    "timestamp": 1511907575,
+    "entity": {
+      "institution": "Partner University",
+      "applicationSubmissionDate": "11/28/2017",
+      "requirementTitle": "Application for Admission - Master's",
+      "applicationTitle": "Master's Application v2",
+      "applicationFileEventStatus": "Sent",
+      "inquiryId": "d6889c5d-fa9e-e711-810d-009021030739",
+      "studentId": "22302860-fa9e-e711-810f-00902103073a",
+      "enrollmentId": "29302860-fa9e-e71a-8106-00902103073a",
+      "findId": "7123456",
+      "programCode": "EDD HEL",
+      "primaryMajorOfInterest": "HEL",
+      "concentration": "",
+      "uscitizenship": "US Citizen",
+      "ssn": "123-45-6789",
+      "tin": null,
+      "applicaitonFileSendHistoryId": "5b014d36-8ad4-e711-8113-00902103073a",
+      "personalInformation": {
+        "firstname": "Dwayne",
+        "middlename": "The Rock",
+        "lastname": "Johnson",
+        "suffix": "Mr",
+        "preferredname": "The Rock",
+        "formerLastName": "",
+        "dateofBirth": "5/2/1972 12:00:00 AM",
+        "gender": "Male"
+      },
+      "contactInformation": {
+        "permanentAddressLine1": "124 Main St.",
+        "permanentAddressLine2": "",
+        "city": "Southwest Ranches",
+        "state": "Florida",
+        "zipCode": "60628",
+        "primaryEmailAddress": "dwayne@therock.com",
+        "primaryPhone": "3034567890",
+        "primaryPhoneType": "Mobile",
+        "secondaryPhone": "",
+        "secondaryPhoneType": "Work",
+        "permitTextMessages": "Yes",
+        "country": ""
+      },
+      "raceAndEthnicity": {
+        "hispanicOrLatino": "Non-hispanic",
+        "races": "Samoan",
+        "countryOfCitizenship": "United States of America"
+      },
+      "maritalInformation": {
+        "maritalStatus": "Single",
+        "haschildren": "No",
+        "numberOfChildren": "0"
+      },
+      "militaryService": {
+        "militarybranch": "",
+        "militarystatus": "",
+        "familyMemberCurrentlyServing": "Father",
+        "familyMemberMilitaryBranch": "Marine Corps",
+        "familyMemberMilitaryServiceStatus": "Veteran",
+        "applyingForMilitaryBenefits": "Yes"
+      },
+      "studentIdentification": {},
+      "previousEnrollment": {
+        "previousEnrollmentSameSite": "Yes",
+        "whenwereyoulastenrolled?": ""
+      },
+      "previousCollege": [
+        {
+          "name": "Partner Unversity",
+          "creditsCompleted": "",
+          "from": "9/1/1994",
+          "to": "5/6/1996",
+          "currentlyEnrolled": "",
+          "degreeCompleted": "Yes",
+          "nameofdegreecompleted": "Master Degree"
+        }
+      ],
+      "financialAid(Optional)": {
+        "applyingForFinancialAid": "Yes"
+      },
+      "employmentInformation": [
+        {
+          "name": "DC Entertainment",
+          "city": "Hollywood",
+          "state": "CA",
+          "jobTitle": "Actor",
+          "from": "10/13/2002",
+          "to": "10/18/2017"
+        }
+      ],
+      "document1": {
+        "type": "Professional Resume",
+        "url": "https://partner.s3.amazonaws.com/partner/22302860-fa9e-e711-8106-00902103073a/TheRock+-+Resume.docx"
+      },
+      "document2": {
+        "type": "Application for Admission - Master's v2",
+        "url": "https://partner.s3.amazonaws.com/partner/22302860-fa9e-e711-8106-00902103073a/7e7ebb1d-8f34-4c52-ac42-d83fd067774a.pdf"
+      },
+      "document3": {
+        "type": "Writing Assessment (Doctoral)",
+        "url": "https://partner.s3.amazonaws.com/partner/22302860-fa9e-e711-8106-00902103073a/TheRock+-+Written+Statement.docx"
+      },
+      "document4": {
+        "type": "References (Doctoral)",
+        "url": "https://partner.s3.amazonaws.com/partner/22302860-fa9e-e711-8106-00902103073a/TheRock+-+2+Letters+of+Recommendation.pdf"
+      },
+      "document5": {
+        "type": "Professional Writing Sample (Doctoral)",
+        "url": "https://partner.s3.amazonaws.com/partner/22302860-fa9e-e711-8106-00902103073a/TheRock+-+Writing+Sample.docx"
+      }
+    },
+    "institutionId": "0756a737-1b5f-e611-810a-005056da2650",
+    "orgName": "partner"
+  },
+  "timestamp": 1511907575
+}

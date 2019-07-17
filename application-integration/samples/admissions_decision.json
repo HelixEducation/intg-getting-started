@@ -1,0 +1,1 @@
+{ "admissions_decision":{"enrollment_id": "uuid","sis_student_id": "alphanumeric_foo","program_code": "alphanumeric_bar","decision": "admitted|denied|admitted_with_exception","decision_date": "ISO-8601 Date time"}}
