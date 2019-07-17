@@ -1,19 +1,13 @@
-Sample project for getting up and running quicker with Application Integration
+Sample project for getting up and running quicker with Helix Education Application Integration
 
-# Setup
-This library leverages the default AWS credentials that are set within the .Net configuration. You can set these via the AWS PowerShell Toolkit:
-```
-PS C:\> Install-Package -Name AWSPowerShell
-```
+# Overview
+Helix Educataion leverages a 2-way integration with partners through Amazon SQS for the purpose
+of exchanging Application information and Admissions Decisions. By leveraging AWS SQS, we can take
+advantage of the higha availability of AWS infrastructure, as well as the [AWS SDK]
+(https://aws.amazon.com/tools/) and numerous samples available online.
 
-And then install the credentials via:
-```
-PS C:\> Set-AWSCredential -AccessKey {accesskey} -SecretKey {secretkey} -StoreAs {profileordefault}
-```
-
-See the [Setting up the AWS Tools for Windows PowerShell Amazon article](http://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up.html) for more information.
-
-# Building and Running
-Packages are bundled, but can be [reinstalled with NuGet](https://docs.microsoft.com/en-us/nuget/consume-packages/reinstalling-and-updating-packages) if necessary.
-
-The sample project runs as a console application (after Build -> Run).
+## Integration
+This integration currently includes the transmission of Completed Applications from:
+` Helix => AWS SQS => Partner`
+and Admissions Decisions from:
+`Partner => AWS SQS => Helix`
