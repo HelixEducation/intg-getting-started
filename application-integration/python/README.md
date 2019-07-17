@@ -1,5 +1,6 @@
 # Python helper scripts
-These scripts are useful for test integration purposes and require [Python 2.7](https://www.python.org/downloads/)
+These scripts are useful for test integration purposes and were originally
+built and testing using [Python 2.7](https://www.python.org/downloads/)
 
 ## Required Libraries
 Run the following 2 commands from the command line to install the required libraries:

@@ -1,0 +1,177 @@
+{
+  "events": [
+    {
+      "timestamp": 1525383049,
+      "institutionId": "c70f60d9-2751-e711-80df-005056ba35a1",
+      "orgName": "uat-mmu",
+      "entity": {
+        "institution": "Mount Mercy University",
+        "applicationSubmissionDate": "5/3/2018",
+        "requirementTitle": "Graduate Application",
+        "applicationTitle": "UAT Graduate Application",
+        "applicationFileEventStatus": "",
+        "studentId": "bb8a1352-0b4f-e811-8145-0050568a2714",
+        "enrollmentId": "c38a1352-0b4f-e811-8145-0050568a2714",
+        "programCode": "GRAD_MBA_BUSADM",
+        "primaryMajorOfInterest": "",
+        "concentration": "",
+        "uscitizenship": "Dual National",
+        "anticipatedStartDate": "3/15/2018",
+        "ssn": "111111111",
+        "tin": null,
+        "applicationFileSendHistoryId": "a095c33e-194f-e811-8175-0050568a2650",
+        "personalInformation": {
+          "firstname": "Bob",
+          "middlename": "J",
+          "lastname": "Smith",
+          "suffix": "III",
+          "preferredname": "Bob",
+          "formerLastName": "N/A",
+          "dateofBirth": "5/1/1980",
+          "gender": "Male"
+        },
+        "contactInformation": {
+          "permanentAddressLine1": "123 Main st.",
+          "permanentAddressLine2": "Apt 2",
+          "city": "Salt Lake City",
+          "state": "Utah",
+          "zipCode": "84101",
+          "primaryEmailAddress": "h391341@nwytg.com",
+          "primaryPhone": "8045215963",
+          "primaryPhoneType": "Mobile",
+          "secondaryPhone": "8412598745",
+          "secondaryPhoneType": "Work",
+          "permitTextMessages": "Yes",
+          "country": ""
+        },
+        "raceAndEthnicity": {
+          "hispanicOrLatino": "Non-Hispanic",
+          "races": "White",
+          "countryOfCitizenship": "United States of America"
+        },
+        "maritalInformation": {
+          "maritalStatus": "Married",
+          "haschildren": "Yes",
+          "numberOfChildren": "1"
+        },
+        "militaryService": {
+          "militarybranch": "Army",
+          "militarystatus": "Reserve",
+          "familyMemberCurrentlyServing": "Neither",
+          "familyMemberMilitaryBranch": "",
+          "familyMemberMilitaryServiceStatus": "",
+          "applyingForMilitaryBenefits": "No"
+        },
+        "studentIdentification": {},
+        "previousCollege": [
+          {
+            "name": "College1",
+            "creditsCompleted": "124",
+            "from": "9/1/2005",
+            "to": "6/1/2009",
+            "currentlyEnrolled": "",
+            "degreeCompleted": "Yes",
+            "nameofdegreecompleted": "Bachelor of Business Administration"
+          }
+        ],
+        "employmentInformation": [
+          {
+            "name": "Employer1",
+            "city": "Murray",
+            "state": "Utah",
+            "jobTitle": "Business Analyst",
+            "from": "5/3/2016",
+            "to": "5/3/2018"
+          },
+          {
+            "name": "Employer2",
+            "city": "Midvale",
+            "state": "Utah",
+            "jobTitle": "Sales Rep",
+            "from": "5/1/2014",
+            "to": "5/2/2016"
+          }
+        ],
+        "familyBackground": {
+          "parent1firstname": "Bill",
+          "parent1lastname": "Smith",
+          "parent1education": "Bachelors Degree",
+          "parent2firstname": "Mary",
+          "parent2lastname": "Smith",
+          "parent2educationlevel": "Doctorate",
+          "primarylanguage": "English",
+          "secondaryAddressLine1": "6798 Main st.",
+          "secondaryAddressLine2": "",
+          "city": "Nephi",
+          "state": "Utah",
+          "zipCode": "84648"
+        },
+        "alumniAffiliation": [
+          {
+            "whatistherelationshipofthealumnustoyou?": "Mother",
+            "pleaseprovidethealumnusfullname": "Mary Smith",
+            "pleaseprovidethegraduationyearofthealumnus": "1970"
+          }
+        ],
+        "intendedMajor": {
+          "primaryMajorOfInterest": "MBA",
+          "secondaryMajorOfInterest": "MA – Criminal Justice"
+        },
+        "highSchool": {
+          "secondaryschooltype": "Graduated High School",
+          "highschoolgraduatedfrom": "Some High School",
+          "secondaryschoolcompletiondate": "6/1/1996"
+        },
+        "previousEnrollment": {
+          "previousEnrollmentSameSite": "Yes",
+          "whenwereyoulastenrolled?": "6/1/2000"
+        },
+        "earnedBachelor'sDegree": [
+          {
+            "name": "Awesome University",
+            "creditsCompleted": "124",
+            "from": "9/1/2005",
+            "to": "6/1/2009",
+            "currentlyEnrolled": "",
+            "degreeCompleted": "Yes",
+            "nameofdegreecompleted": "Bachelor of Business Administration"
+          }
+        ],
+        "additionalRequiredInformation": {
+          "suspendedExpelled": "No",
+          "convictedOfAFelony": "No"
+        },
+        "financialAid(Optional)": {
+          "applyingForFinancialAid": "Yes"
+        },
+        "religiousAffiliation": {
+          "religiousCommunityMember": "Yes",
+          "religiousAffiliation": "Catholic"
+        },
+        "testScores-SAT": {
+          "dateTestTaken": "1/1/1995",
+          "mathScore": "600",
+          "writingScore": "300",
+          "criticalReadingScore": "400",
+          "totalScore": "1300"
+        },
+        "testScores-ACT": {
+          "dateTestTaken": "1/2/1995",
+          "englishScore": "30",
+          "mathematicsScore": "30",
+          "readingScore": "30",
+          "scienceScore": "30",
+          "totalScore": "30"
+        },
+        "almostDone!": {},
+        "documents": [
+          {
+            "type": "Graduate Application",
+            "url": "https://helix-mmu-preprod.s3.amazonaws.com/uat-mmu/bb8a1352-0b4f-e811-8145-0050568a2714/3f0f1e3e-bcea-4625-ac41-b9d65c35252c.pdf",
+            "fileName": "3f0f1e3e-bcea-4625-ac41-b9d65c35252c.pdf"
+          }
+        ]
+      }
+    }
+  ]
+}
