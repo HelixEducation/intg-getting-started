@@ -28,6 +28,16 @@ only content.
 ./publish-application.py {application.json}
 ```
 
+### Processing all queue messages
+This script uses the `config.yml` file to connect to a remote AWS SQS and pull
+(but not delete) all messages on the queue, as well as download all attached files
+from AWDS SQS. This is a good starting spot for seeing what messages
+are currently on the queue, and jumping off point for
+processing the applications into your SIS.
+```
+./process-queue.py
+```
+
 ### Purging the queue
 This script completely wipes the queue clean
 ```
