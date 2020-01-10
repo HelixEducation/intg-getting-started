@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Helper script to publish sample message to SQS queue
 import yaml
 import boto3
 import sys
 
 if len(sys.argv) < 2:
-	print 'usage: publish-application.py {filename}'
+	print ('usage: publish-application.py {filename}')
 	sys.exit(1)
 
 # Load config file

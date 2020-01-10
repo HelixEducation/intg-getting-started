@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Helper script to publish sample message to SQS queue
 import yaml
 import boto3

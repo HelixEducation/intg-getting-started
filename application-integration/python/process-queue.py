@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Helper script to publish sample message to SQS queue
 import yaml
 import boto3
@@ -6,7 +6,7 @@ import sys
 import json
 
 if len(sys.argv) < 1:
-	print 'usage: tail-queue.py'
+	print ('usage: process-queue.py')
 	sys.exit(1)
 
 # Load config file
