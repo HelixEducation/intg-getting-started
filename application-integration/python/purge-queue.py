@@ -9,7 +9,7 @@ if len(sys.argv) < 1:
 	sys.exit(1)
 
 # Reaffirm from command line
-are_you_sure = raw_input('Are you sure you want to do this (y/n)?')
+are_you_sure = input('Are you sure you want to do this (y/n)?')
 
 if are_you_sure == 'y':
 	# Load config file
@@ -36,5 +36,5 @@ if are_you_sure == 'y':
 	client.purge_queue(QueueUrl=sqs_url)
 else:
 	# Not sure
-	print 'Ok. Good bye!'
+	print ('Ok. Good bye!')
 	sys.exit(0)
