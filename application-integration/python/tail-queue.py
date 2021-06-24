@@ -38,4 +38,4 @@ while True:
 		)
 	if "Messages" in response.keys():
 		for message_payload in response['Messages']:
-			print message_payload['Body']
+			print (message_payload['Body'])
